@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "d8cfda3a-6e8b-4045-9e3b-8eb1341cffd8",
+		"name": "New case / new organization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New organization",
+			"_postman_id": "cc437e4f-9cfc-4c5f-9c50-b26fdc2badbc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/organizations?displayName=PKNorganization&key=b3a4d6410489049d3e01e1e360189416&token=ATTAe0a4edffa96919e73e7c378bdcb4e960fd20611cc0c0820c8059d6c7e90f6b069D780C73",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"organizations"
+					],
+					"query": [
+						{
+							"key": "displayName",
+							"value": "PKNorganization"
+						},
+						{
+							"key": "key",
+							"value": "b3a4d6410489049d3e01e1e360189416"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe0a4edffa96919e73e7c378bdcb4e960fd20611cc0c0820c8059d6c7e90f6b069D780C73"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Board",
+			"_postman_id": "4cb3ec7d-33e0-4b2e-941d-b1821d9266ea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name= Tablica API&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Tablica API"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listn",
+			"_postman_id": "80c34235-0572-40c8-84eb-4350d3952606",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=testowy ticket&idBoard=6420425210affac5b2baecba&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "testowy ticket"
+						},
+						{
+							"key": "idBoard",
+							"value": "6420425210affac5b2baecba"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New RequestCard",
+			"_postman_id": "844bc794-1f7c-4309-b860-69fec2b487fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/cards?idList=6420434c8c2647740c17e3ae&name=test ticket&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "6420434c8c2647740c17e3ae"
+						},
+						{
+							"key": "name",
+							"value": "test ticket"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"_postman_id": "7fe2b9a8-c7e6-48ff-91b5-ae8fa6b8fd9f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6420440d7620b3990a26e88b?key={{key}}&token={{token}}&desc=testowy ticket stworzony na potrzeby nowej organizacji",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6420440d7620b3990a26e88b"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "desc",
+							"value": "testowy ticket stworzony na potrzeby nowej organizacji",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
