@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "e44e1d04-e56f-45f8-8515-cdb6f733893f",
+		"name": "Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateBoard",
+			"_postman_id": "a78931ab-460a-4890-8afb-f1e24921219b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name= Tablica API&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Tablica API"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBoard Copy",
+			"_postman_id": "7c654ada-06e4-42f5-8557-1f6e63666cc9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name= Tablica API&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Tablica API"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewList",
+			"_postman_id": "11c1fa45-68de-4f0d-aae5-b5059abeab50",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name= ToDo&idBoard=641ff9eb25cd97e355c49c61&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " ToDo"
+						},
+						{
+							"key": "idBoard",
+							"value": "641ff9eb25cd97e355c49c61"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCard",
+			"_postman_id": "931d5e30-a3f0-484a-81ea-78a8c33cce25",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=6420002102ae2f9fd93887c2&name=Drugakarta na liscie&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "6420002102ae2f9fd93887c2"
+						},
+						{
+							"key": "name",
+							"value": "Drugakarta na liscie"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Createenewlistinprogress",
+			"_postman_id": "80196dee-17b1-4070-a79f-f860968f5a2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name= InProgress&idBoard=641ff9eb25cd97e355c49c61&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " InProgress"
+						},
+						{
+							"key": "idBoard",
+							"value": "641ff9eb25cd97e355c49c61"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Createnewlistdone",
+			"_postman_id": "86ac987f-8962-46e1-909d-98d77d5b0b88",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name= Done&idBoard=641ff9eb25cd97e355c49c61&key=6feedc3b115a8a9c94bec63ff57f44e4&token=ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Done"
+						},
+						{
+							"key": "idBoard",
+							"value": "641ff9eb25cd97e355c49c61"
+						},
+						{
+							"key": "key",
+							"value": "6feedc3b115a8a9c94bec63ff57f44e4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA470c92f710be7f06451596b3315a3ee1c99a2313e29541c3e6f223c152308e1694637EF1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBoard",
+			"_postman_id": "e3ce1d7e-2a08-4b8d-8862-6a2eaa20b647",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}boards/641ff9eb25cd97e355c49c61?desc=nowe description do boards&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}boards"
+					],
+					"path": [
+						"641ff9eb25cd97e355c49c61"
+					],
+					"query": [
+						{
+							"key": "desc",
+							"value": "nowe description do boards",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getmember",
+			"_postman_id": "48f0c085-a140-49a7-a2ea-025f1d986350",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/members/641ff14fd423007dad540184"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"_postman_id": "42b972ac-0624-46be-ac21-d52336861946",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/members/641ff14fd423007dad540184?&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"members",
+						"641ff14fd423007dad540184"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
